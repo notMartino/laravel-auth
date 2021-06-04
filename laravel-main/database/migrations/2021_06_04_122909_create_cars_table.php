@@ -18,7 +18,7 @@ class CreateCarsTable extends Migration
 
             $table->string('name', 64);
             $table->string('model', 64);
-            $table->float('kw', 6, 2);
+            $table->integer('kw');
 
             $table -> bigInteger('brand_id') -> unsigned() -> index();
 

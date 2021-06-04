@@ -10,6 +10,7 @@
                 <li>
                     {{'Name: ' . $car -> name}} <br>
                     {{'Model: ' . $car -> model}}
+                    <a href="{{route('editCarLink', $car -> id)}}">Edit</a>
                     <h5>Pilots</h5>
                     <ul>
                         @foreach ($car -> pilots as $pilot)

@@ -9,6 +9,6 @@ $factory->define(Car::class, function (Faker $faker) {
     return [
         'name' => $faker -> word,
         'model' => $faker -> word,
-        'kw' => $faker -> randomFloat(2, 30, 500)
+        'kw' => $faker -> numberBetween(40, 500)
     ];
 });
