@@ -11,6 +11,7 @@
                     {{'Name: ' . $car -> name}} <br>
                     {{'Model: ' . $car -> model}}
                     <a href="{{route('editCarLink', $car -> id)}}">Edit</a>
+                    <a href="{{route('deleteCarLink', $car -> id)}}">Delete</a>                    
                     <h5>Pilots</h5>
                     <ul>
                         @foreach ($car -> pilots as $pilot)

@@ -16,6 +16,8 @@ Route::post('/test/update/car{id}', 'HomeController@updateCar') -> name('updateC
 
 Route::get('/test/details/pilot/{id}', 'PilotController@pilotDetailsView') -> name('pilotDetailsLink');
 
+Route::get('/delete/car/{id}', 'HomeController@deleteCar') -> name('deleteCarLink');
+
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');

@@ -87,4 +87,13 @@ class HomeController extends Controller
         return redirect() -> route('indexLink');
     }
 
+    public function deleteCar($id){
+
+        $car = Car::findOrFail($id);
+        $car -> deleted = 1;
+        
+        $car -> save();
+        return redirect() -> route('indexLink');
+    }
+
 }

@@ -10,7 +10,7 @@ use App\Pilot;
 class CarController extends Controller
 {
     public function carView(){
-        $cars = Car::all();
+        $cars = Car::where('deleted', false) -> get();
         
         return view('pages.index', compact('cars'));
     }
